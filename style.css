@@ -1,0 +1,442 @@
+html {
+    scroll-padding-top: 70px;
+}
+html.inContacts {
+    scroll-padding-top: 0px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 1px solid white;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+    z-index: 2;
+    background-color: white;
+}
+header.inContacts{
+    position:sticky;
+}
+body{
+    background: rgb(224, 224, 224);
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 70px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body.bodyInContacts{
+    margin-top: 0;
+}
+footer{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background: white;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: auto;
+    border-top: 1px solid white;
+}
+/*header*/
+a.inHeader{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-right: 20px;
+    font-family: Monospace;
+    color: rgb(96, 96, 96);
+    text-align: end;
+}
+.logo{
+    height: 60px;
+    margin-right: 20px;
+}
+
+/*footer*/
+nav {
+	text-align: right;
+}
+	
+nav *{
+    font-family: Monospace;
+	margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    background-color: transparent;
+}
+
+/*Main topics*/
+h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    font-family: Monospace;
+    color: rgb(96, 96, 96);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+}
+hr{
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(96, 96, 96), rgba(0, 0, 0, 0));
+}
+.collections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.listoftopics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 950px;
+}
+.topic{
+    width: 200px;
+    height: 250px;
+    background: white;
+    text-align: center;
+    font-family: Monospace;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+}
+.imageintopic{
+    width: 100%;
+    align-items: center;
+    max-height: 100%;
+    object-fit: cover;
+}
+.imageintopic:hover{
+    transform: scale(1.05);
+}
+.buttonintopic{
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    border: 0px;
+    top:80%;
+    font-family: Monospace;
+    text-transform: uppercase;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.buttonintopic:hover {
+    cursor: pointer;
+    background-color: rgb(96, 96, 96);
+    color: white;
+}
+
+/*Main collections*/
+.collection{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap:30px;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.assortimentOfCollection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imgInCollection{
+    width: 240px;
+    width: 280px;
+    border: 10px solid white;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+}
+.imgInCollection:hover{
+    transform: scale(1.08);
+}
+.price{
+    text-align: center;
+    font-family: Monospace;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(51, 51, 51);
+}
+
+/*Contacts Page*/
+.contactpage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 20px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+}
+.columnInContacts1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: content;
+}
+ul{
+    text-align: center;
+    margin-top: 0px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: Monospace;
+    font-size: 14px;
+}
+.imgbuilding{
+    margin-top: 16px;
+    max-width: 80%;
+    height: auto;
+    align-self: center;
+}
+.columnInContacts2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+.contactusblock{
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+    background: rgb(242, 241, 241);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Monospace;
+    font-size: 14px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.inputs{
+    padding: 0;
+    width: 88%;
+    height: 30px;
+    display: flex;
+    align-self: center;
+    border-radius: 4px;
+    border: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.inputs:focus {
+    box-shadow:0 1px 3px rgb(0 0 0 / 30%);
+    outline: none;
+    border-radius: 4px;
+}
+label{
+    align-self: flex-start;
+    margin-left: 6%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.reasons_box{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    align-self:flex-start;
+    margin-top: 20px;
+    margin-left: 6%;
+    margin-right: 6%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap:15px;
+}
+.textReason{
+    align-self: left;
+    vertical-align: middle;
+    flex-basis: content;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.reasons_box *{
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;}
+
+.reasonsofcontact{
+    background-color: white;
+    max-width: 250px;
+    min-width:100px;
+    height: 30px;
+    border: 0px;
+    font-family: Monospace;
+    border-radius: 4px;
+    outline: none;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.reasonsofcontact.focus{
+    box-shadow:0 1px 3px rgb(0 0 0 / 30%);
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+textarea{
+    display: inline-block;
+    max-width: 88%;
+    min-width: 88%;
+    min-height: 200px;
+    border-radius: 4px;
+    border: 0px;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+textarea:focus {
+    box-shadow:0 1px 3px rgb(0 0 0 / 30%);
+    outline: none;
+    border-radius: 4px;
+}
+.buttonsubmit{
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    border: 0px;
+    font-family: Monospace;
+    text-transform: uppercase;
+    margin-left: 5%;
+    align-self: flex-start;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.buttonsubmit:hover {
+    cursor: pointer;
+    background-color: rgb(96, 96, 96);
+    color: white;
+}
+
+/*Dark Mode*/
+.switchDarkMode{
+    position: relative;
+    display: inline-block;
+    width: 53px;
+    height: 24px;
+    align-self: center;
+    margin: 0px;
+    padding: 0px;
+}
+.switchDarkMode input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}  
+.slider {
+    width: 53px;
+    height: 24px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(224, 224, 224);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input.darkMode:checked + .slider {
+    background-color: black;
+    border:1px solid white;
+}
+input.darkMode:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+.buttonDarkMode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    gap:5px
+}
+.nameDarkMode{
+    text-align: center;
+	font-family: Monospace;
+	text-transform: uppercase;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    word-spacing: -.4ch;
+    color: rgb(96, 96, 96);
+}
+.darkModeTextWhite{
+    color:white;
+}
+.darkModeBackBlack{
+    background-color: black;
+}   
+
+/*responsive*/
+@media (max-width:450px){
+    h1{
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-right: 10px;
+        font-family: Monospace;
+        color: rgb(96, 96, 96);
+        text-align: end;
+    }
+    .reasons_box{
+        gap:5px;
+    }
+}
+

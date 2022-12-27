@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="bodyInContacts">
+    <header class="inContacts">
+        <div class="buttonDarkMode">
+            <label class="switchDarkMode" >
+                <input type="checkbox" class="darkMode" id="switchDarkMode">
+                <span class="slider round"></span>
+            </label>
+            <p class="nameDarkMode">Dark Mode</p>
+        </div>
+        <a href="index.html" class="inHeader">
+            <h1>the poster store</h1>
+            <img class="logo" src="logo.png" alt="logo">
+        </a>
+    </header>
+    <main>
+        <div class="contactpage">
+            <div class="columnInContacts1">
+                <h2>Company details</h2>
+                <ul>
+                    <li>Address: Stockholm, Building</li>
+                    <li>Phone: +4677137111</li>
+                    <li>E-mail: theposterstore@gmail.com </li>
+                </ul>
+                <img src="building.jpg" alt="building" class="imgbuilding" width="400px">
+            </div>
+            <div class="columnInContacts2">
+                <h2>CONTACT US</h2>
+                <div width="600px" height="520px" class="contactusblock">
+                    <label for="user">Your name</label>
+                    <input class="inputs" name="user" type="text" placeholder="Name" id="user">
+                    <label for="email">Your E-Mail Address</label>
+                    <input class="inputs" name="email" type="email" placeholder="Email" id="email">
+                    <div class="reasons_box">
+                        <label for="reasonsofcontact" class="textReason">Reason for contacting us </label>
+                        <select name="Reasonsofcontact" id="reasonsofcontact" class="reasonsofcontact">
+                            <option selected disabled hidden>--Choose one--</option>
+                            <option value="order">My order</option>
+                            <option value="delivery">Delivery</option>
+                            <option value="return">Return</option>
+                            <option value="shop">All about the shop</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <label for="message">Message</label>
+                    <textarea name="message" type="text" id="message"></textarea>                   
+                    <button type="button" class="buttonsubmit" onclick="alert('Your message is sent!')" id="submitMessage">Submit</button>
+                </div>
+            </div>
+        </div>
+    <br>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contacts.html">contact us</a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
